@@ -1,0 +1,62 @@
+{
+	"CAJA":{
+		"alias": "Caja de Herramientas",
+		"EXAMINAR":"Hay un martillo, entre otras muchas herramientas."
+	},
+	"CUADRO":{
+		"EXAMINAR": "Es una hermosa pintura representando una esmeralda.",
+		"accion":{"USAR ESPADA": "Has rasgado el cuadro. Hay una estatuilla al fondo."}
+	},
+	"ESCUDO":{
+		"alias": "Escudo de armas",
+		"EXAMINAR": "Es un escudo de armas con un par de espadas detrás."
+	},
+	"ESMERALDA":{
+		"es_agarrable":true,
+		"EXAMINAR": "Es una hermosa esmeralda. Seguramente vale mucho.",
+		"articulo": "una"
+	},
+	"ESPADA":{
+		"es_agarrable":true,
+		"USAR":{
+			"recibidor":"TAPIZ",
+			"sala":"CUADRO"
+		},
+		"EXAMINAR":"Aún parece conservar su filo.",
+		"articulo": "una"
+	},
+	"ESTATUILLA":{
+		"es_agarrable":true,
+		"EXAMINAR":"Parece ser maciza, pero es muy liviana para su tamaño.",
+		"articulo": "una",
+		"accion":{"USAR MARTILLO":"¡Había una esmeralda dentro de la estatuilla!"}
+	},
+	"LLAVE":{
+		"es_agarrable":true,
+		"USAR":{
+			"recibidor":"PUERTA"
+		},
+		"EXAMINAR":"Es una llave de hierro bastante mas gruesa que una normal.",
+		"articulo": "una"
+	},
+	"MARTILLO":{
+		"es_agarrable":true,
+		"USAR":{
+			"ESTATUILLA":"ESMERALDA"
+		},
+		"EXAMINAR":"Más allá del polvo, está en buen estado.",
+		"articulo": "un"
+	},
+	"MESA":{
+		"EXAMINAR": "Entre muchas herramientas, hay una llave cubierta de polvo."
+	},
+	"PUERTA":{
+		"accion":{"USAR LLAVE":"has abierto la puerta."},
+		"EXAMINAR":"Es una pesada puerta de hierro."
+	},
+	"TAPIZ":{
+		"EXAMINAR":"Tiene un intrincado diseño.",
+		"accion":{"USAR ESPADA":"has destrozado el tapiz."}
+		
+	}
+}

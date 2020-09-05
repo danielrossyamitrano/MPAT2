@@ -1,0 +1,18 @@
+{
+  "recibidor": {
+   "des":"{a}. Esta agradablemente iluminado, aunque no hay fuente de luz visible. En una de las paredes {b} {tapiz} y en la otra {escudo} {c} escudo de armas. Hacia el oeste {d} pesada puerta metálica{puerta} y hacia el este {e} arco que conecta con {hab2}otra habitación. En el techo esta la trampilla por la que has caído, {f} cerrada.",
+    "variables": {"a": ["Parece ser el recibidor de una casa elegante", "Te encuentras en el recibidor"],"b": ["hay un", "puedes ver el"],"tapiz": ["tapiz", "tapiz destrozado"],"escudo": ["hay", "estaba"],"c": ["un", "el"],"d": ["hay una", "está la"],"puerta":["",", ahora abierta,"],"e": ["un", "el"],"hab2": ["", "la "],"f": ["ahora", "aún"]},
+
+    "objetos": ["Escudo","Espada","Puerta","Tapiz"],
+	  "on_seen":["a","b","c","d","e","f"]
+    },
+
+  "sala": {
+    "des": "{ex} pequeña sala alfombrada que parece no haber sido usada en mucho tiempo, evidenciado por la gruesa capa de polvo que cubre todo en la habitación. Al igual que la anterior, esta iluminada sin fuente aparente. En una pared {cuadro}. En la pared opuesta a la entrada hay una mesa cubierta de polvo {caja} caja de herramientas.",
+    "variables": {"ex":["Es una", "Te encuentras en la"], "cuadro":["hay colgado un cuadro que representa una esmeralda", "está el cuadro rasgado"], "caja":["y debajo se ve una", "sobre la que se encuentra la"]},
+
+    "objetos": ["Caja","Cuadro","Estatuilla","Llave","Martillo","Mesa"],
+	
+	"on_seen":["ex"]
+  }
+}
